@@ -4,17 +4,17 @@ module logo(){
 
 translate([4,4,5]){
 linear_extrude(height=5)
-scale(5)
+scale(3)
     logo();
 }
 
 module keychain(){
 difference(){
 minkowski(){
-    cube([120,60,5], center=false);
+    cube([75,40,5]);
  cylinder(1);
 }
-cylinder(8.1,3,3,center);
+cylinder(8.1,3,3);
 }
 
 }
