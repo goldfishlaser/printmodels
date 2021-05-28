@@ -1,20 +1,22 @@
 module logo(){
+    
    import("/home/goldishlaser/usb-a-magnetic-breakaway/digitalAssets/logo/2020_raster/buskill_wordsonly.svg"); 
 }
 
-translate([4,4,5]){
-linear_extrude(height=5)
+color("red") translate([4,4,2.5]){
+linear_extrude(height=2.5)
 scale(3)
-    logo();
+     logo();
 }
 
 module keychain(){
+    color("black")
 difference(){
 minkowski(){
-    cube([75,40,5]);
+    cube([75,35,2.5]);
  cylinder(1);
 }
-cylinder(8.1,3,3);
+cylinder(8.1,3,2.4);
 }
 
 }
@@ -24,8 +26,9 @@ keychain();
 
 module keyhole(){
 difference(){
-cylinder(8,6,6);
-cylinder(8.1,3,3);
+cylinder(3.5,6,6);
+ cylinder(8.1,3.1,3.1);
 }
 }
-keyhole();
+color("black") keyhole();
+
