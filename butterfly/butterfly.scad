@@ -1,5 +1,5 @@
-linear_extrude(1){
-scale([1.5,1.5,0]){
-import("butterfly.svg");
+linear_extrude(2){
+{
+import("butterfly1.svg");
 }
 }
