@@ -9,7 +9,7 @@ linear_extrude(1){
 color("red")linear_extrude(1.5){
     difference(){
     translate([19.25,20,0])circle($fn = 30, $fa = 30, $fs = 2, r = 23.5);
-    import("/home/goldishlaser/Pictures/chinese_tiger.svg");
+    import("chinese_tiger.svg");
     }
 } 
 
